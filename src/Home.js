@@ -12,7 +12,7 @@ class Home extends React.Component{
     }
 
      getMovies = async()=>{
-        const {data:{data:{movies}}}=await axios.get('https://yts.mx/api/v2/list_movies.json?sort_by=download_count')
+        const {data:{data:{movies}}}=await axios.get('https://yts.mx/api/v2/list_movies.json?sort_by=like_count')
         this.setState({movies, isLoading:false})
     }
 

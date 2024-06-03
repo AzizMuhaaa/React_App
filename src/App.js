@@ -1,21 +1,22 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import About from './About';
-import Home from './Home';
-import Navigation from './Navigation';
-import Detail from './Detail';
+import React from "react";
+import { HashRouter, Route,Routes } from "react-router-dom";
+import Navigation from "./Navigation";
+import Home from "./Home";
+import About from "./About";
+import Detail from "./Detail";
+import "./css/style.css";
 
 function App() {
-    return (
-        <Router>
-            <Navigation/>
-            <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/about' element={<About />} />
-                <Route path="/movie_details" element={<Detail/>}/>
-            </Routes>
-        </Router>
-    );
+  return (
+    <HashRouter>
+    <Navigation />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/movie/:id" element={<Detail />} />
+    </Routes>
+  </HashRouter>
+  );
 }
 
 export default App;
