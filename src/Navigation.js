@@ -5,7 +5,7 @@ import "./css/styleNavigate.css";
 function Navigation() {
   return (
     <div className="nav">
-      <Link to="/">Главная</Link>
+      <Link to="/">Main page</Link>
       <Link
         to={{
           pathname: "/about",
@@ -14,8 +14,9 @@ function Navigation() {
           },
         }}
       >
-        О проекте
+        About
       </Link>
+      <Link to="/contact">Contact</Link>
     </div>
   );
 }

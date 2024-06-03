@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .job-list, .employee-list {
+    width: 45%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .job-list h2, .employee-list h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333333;
+    text-align: center;
+  }
+  
+  .job-list ul, .employee-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .job-list li, .employee-list li {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .job-list li:hover, .employee-list li:hover {
+    transform: translateY(-5px);
+  }
+  
+  .job-list h3, .employee-list h3 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #555555;
+  }
+  
+  .job-list p, .employee-list p {
+    margin: 0;
+    font-size: 16px;
+    color: #777777;
+  }
+  
+  .job-list p:first-child, .employee-list p:first-child {
+    margin-top: 10px;
+  }
+  
